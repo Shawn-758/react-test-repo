@@ -19,7 +19,6 @@ pipeline {
         stage('Run Selenium Tests') {
             steps {
                 sh '''
-                    cd my-react-app
                     npm start &
                     sleep 30
                     npx mocha selenium_tests.js
