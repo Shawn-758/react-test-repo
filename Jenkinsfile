@@ -12,7 +12,6 @@ pipeline {
         stage('Setup Environment') {
             steps {
                 sh '''
-                    cd my-react-app
                     npm install
                 '''
             }
